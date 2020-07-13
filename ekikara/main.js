@@ -11,7 +11,7 @@ var tbl = "<table border='1'>";
 for (var i=0; i<tabText.length-1; i++){
 var cText = tabText[i].split(",");
 tbl += "<tr>";
-for (var j=0; j<cText.length; j++){
+for (var j=1; j<cText.length; j++){
 tbl += "<td>"+cText[j]+"</td>";
 }
 tbl +="</tr>";

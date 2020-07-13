@@ -1,8 +1,8 @@
 <div class="control-bar">
 <ul>
     <li class="sort_button"><button class="btn sort active" data-sort="popular:desc">点数順</button></li>
-    <li class="sort_button"><button class="btn sort" data-sort="price:asc">近い順</button></li>
-    <li class="sort_button"><button class="btn sort" data-sort="price:desc">遠い順</button></li>
+    <li class="sort_button"><button class="btn sort" data-sort="price:asc">安い順</button></li>
+    <li class="sort_button"><button class="btn sort" data-sort="price:desc">高い順</button></li>
 </ul>
 </div>
 <br clear="all" />

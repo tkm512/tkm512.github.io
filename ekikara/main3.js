@@ -12,7 +12,7 @@ for (var i=0; i<tabText.length-1; i++){
 var cText = tabText[i].split(",");
 tbl += "<tr>";
 for (var j=0; j<cText.length-1; j++){
-if(cText[0]=="メトロ"){
+if(cText[1]<=10){
 tbl += "<td>"+cText[j+1]+"</td>";
 }
 }

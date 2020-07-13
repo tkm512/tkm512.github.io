@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+body{
+    background-color:#fff;
+}
+
+#wrapper{
+    max-width: 740px;
+    margin:0 auto;
+    background-color:#fff;
+}

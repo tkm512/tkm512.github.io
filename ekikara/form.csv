@@ -1,0 +1,11 @@
+name,url,textarea1,textarea2,img,point,select_price,select_os,select_postage,radio_animal,check_fruit
+商品1,http://google.com,1テキストテキストテキスト,1ダミーダミーダミー<br />1ダミーダミーダミー<br />1ダミーダミーダミー<br />1ダミーダミーダミー,https://placehold.jp/80x80.png,100,3000,ios,0,monkey,apple;lemon;melon
+商品2,http://google.com,2テキストテキストテキスト,2ダミーダミーダミー,https://placehold.jp/80x80.png,90,3000,android,1,gorilla,apple
+商品3,http://google.com,3テキストテキストテキスト,3ダミーダミーダミー,https://placehold.jp/80x80.png,80,4000,android,2,gorilla,apple;melon;strawberry
+商品4,http://google.com,4テキストテキストテキスト,4ダミーダミーダミー,https://placehold.jp/80x80.png,70,5000,android,0,gorilla,apple;strawberry
+商品5,http://google.com,5テキストテキストテキスト,5ダミーダミーダミー,https://placehold.jp/80x80.png,60,3000,ios,0,chimpanzee,apple;lemon
+商品6,http://google.com,6テキストテキストテキスト,6ダミーダミーダミー,https://placehold.jp/80x80.png,50,3000,android,1,monkey,apple;watermelon
+商品7,http://google.com,7テキストテキストテキスト,7ダミーダミーダミー,https://placehold.jp/80x80.png,40,4000,ios,2,gorilla,apple
+商品8,http://google.com,8テキストテキストテキスト,8ダミーダミーダミー,https://placehold.jp/80x80.png,30,5000,ios,0,chimpanzee,apple;watermelon
+商品9,http://google.com,9テキストテキストテキスト,9ダミーダミーダミー,https://placehold.jp/80x80.png,20,3000,android,1,monkey,apple
+商品10,http://google.com,10テキストテキストテキスト,10ダミーダミーダミー,https://placehold.jp/80x80.png,10,3000,android,2,monkey,apple

@@ -1,0 +1,567 @@
+ul li {
+    list-style-type: none;
+}
+li {
+    display: list-item;
+    margin: 0;
+}
+.search_area{
+    margin: 0 auto 10px;
+    padding: 8px;
+    width:98%;
+    box-sizing:border-box;
+
+    border-top: 2px solid #5391BA;
+    border-right: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+.searchTool .searchSub .searchItem {
+    float: left;
+    padding: 0 3px 8px;
+    width: 31%;
+}
+.searchTool .searchMain .searchItemWrap, .searchTool .searchSub .searchItemWrap {
+    position: relative;
+    padding: 0 10px;
+    border: 1px solid #efefef;
+}
+.searchTool .searchMain .searchItemSelect, .searchTool .searchSub .searchItemSelect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    color: #666;
+    font-weight: 700;
+}
+.searchTool .searchMain .searchItemName, .searchTool .searchSub .searchItemName {
+    position: relative;
+    z-index: 1;
+    color: #aaa;
+    font-weight: 400;
+    pointer-events: none;
+}
+.searchTool article, .searchTool img, .searchTool input, .searchTool label, .searchTool ol, .searchTool p, .searchTool section, .searchTool select {
+    margin: 0 5px 0 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    vertical-align: baseline;
+    text-align: left;
+}
+.searchTool .searchSub .searchItem .searchItemWrap {
+    height: 35px;
+    border-radius: 5px;
+}
+.searchTool .searchSub .searchItem .searchItemName {
+    font-size: 0.6rem;
+    line-height: 15px;
+}
+.searchTool .searchSub .searchItem .searchItemSelect {
+    line-height: 48px;
+}
+.searchTool option, select {
+    font-size: 0.7rem !important;
+    border-radius: 0;
+    color: inherit;
+    vertical-align: middle;
+    font-size: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.searchCheckbox{
+    margin:5px 0 10px;
+    font-size:85%;
+    text-align: left;
+}
+
+.searchResultLine {
+position: relative;
+padding: 0.5em 0.5em 0.5em 1.5em;
+line-height: 1.4;
+color: #ff6a6a;
+border-top: dotted 1px gray;
+border-bottom: dotted 1px gray;
+background: #fffff4;
+margin:10px 0 0 ;
+}
+
+.searchResultLine:before{ font-family: FontAwesome;
+content: "\f138";
+position: absolute;
+font-size: 1em;
+left: 0.25em;
+top: 0.5em;
+color: #ff6a6a;
+}
+
+.control-bar{
+    margin:0 0 15px;
+}
+.control-bar ul{
+    margin:0;
+    padding:0;
+}
+
+.sort_button button {
+    float: left;
+    color: #5391BA;
+    border: 2px solid #5391BA;
+    background: #fff;
+    padding: 3%;
+    width: 94%;
+    border-radius: 5px;
+    margin: 5% 3%;
+    line-height: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 11px;
+    height:40px;
+}
+
+.sort_button .active{
+    background:#5391BA;
+    color:#fff;
+}
+
+.sort_button button::after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    font-size: 11px;
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    content: "▽";
+}
+
+.sort_button {
+    float: left;
+    display: block;
+    margin: 0px;
+    /* width: 25%; */
+    width: 33%;
+}
+
+
+.htitle {
+    position: relative;
+    padding-left: 1.2em;
+    line-height: 1.4;
+    float:inherit !important;
+    margin:3px 0 5px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.htitle:before{
+    font-family: FontAwesome;
+    content: "\f059";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #5391BA;
+}
+
+#searchform input[type=radio],
+#searchform input[type=checkbox] {
+    display: inline-block;
+    margin-right: 6px;
+}
+#searchform input[type=radio] + label,
+#searchform input[type=checkbox] + label {
+    position: relative;
+     
+    display: inline-block;
+    margin-right: 12px;
+     
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.searchCheckbox > div,
+.searchRadiobox > div
+{
+    float:left;
+}
+
+
+@media (min-width: 1px) {
+    #searchform input[type=radio],
+    #searchform input[type=checkbox] {
+        display: none;
+        margin: 0;
+    }
+    #searchform input[type=radio] + label,
+    #searchform input[type=checkbox] + label {
+        padding: 0 0 0 24px;
+    }
+    #searchform input[type=radio] + label::before,
+    #searchform input[type=checkbox] + label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+         
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-top: -9px;
+         
+        background: #FFF;
+    }
+    #searchform input[type=radio] + label::before {
+        border: 2px solid #ccc;
+        border-radius: 30px;
+    }
+    #searchform input[type=checkbox] + label::before {
+        border: 2px solid #ccc;
+    }
+    #searchform input[type=radio]:checked + label::after,
+    #searchform input[type=checkbox]:checked + label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+         
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+    }
+    #searchform input[type=radio]:checked + label::after {
+        left: 5px;
+         
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+         
+        background: #E71063;
+        border-radius: 8px;
+    }
+    #searchform input[type=checkbox]:checked + label::after {
+        left: 3px;
+         
+        width: 16px;
+        height: 8px;
+        margin-top: -8px;
+        
+        border-left: 3px solid #E71063;
+        border-bottom: 3px solid #E71063;
+
+        /*
+        border-left: 3px solid #53b300;
+        border-bottom: 3px solid #53b300
+        */
+        
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+.buttonArea{
+    margin:10px auto;
+    width:300px;
+/*
+    margin:10px 0;
+    text-align:center;
+*/
+}
+.isometric { 
+    margin:0;
+    color: #484848;
+    display: inline-block;
+    height: 35px;
+    font-size: 16px;
+    line-height: 36px;
+    background: #eaeef1;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.isometric .iconback{
+display: inline-block;
+    width: 40px;
+    height: 35px;
+    color: white;
+    /*
+    text-align: center;
+    vertical-align: middle;
+    */
+    border-radius: 5px 0 0 5px;
+}
+.isometric span{
+    vertical-align: middle;
+}
+.isometric .iconback .fa{
+    line-height: 35px;
+    font-size: 18px;
+}
+.isometric .btnttl{
+    display: inline-block;
+    width: 260px;
+    height: 35px;
+    text-align: center;
+    border-bottom: solid 4px #dcdcdc;
+    vertical-align: middle;
+    border-radius: 0 0 5px 0;
+}
+.isometric .istw{
+    background:#1da1f3;
+    border-bottom: solid 4px #1484ca;
+}
+.isometric .isfb{
+    background:#3b75d4;
+    border-bottom: solid 4px #2a5caf;
+}
+.isometric .isfdly{
+    background:#7ece46;
+    border-bottom: solid 4px #65b130;
+}
+.isometric .ispkt{
+    background:#fd7171;
+    border-bottom: solid 4px #ef4d4d;
+}
+.isometric:hover{
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
+.isometric:hover .btnttl, .isometric:hover .iconback{
+    border-bottom: none;
+}
+
+#resultTable table {
+ border: 1px solid #eee;
+ border-collapse: separate;
+ margin-bottom:10px;
+}
+ 
+#resultTable th {
+ border-top: 1px solid #E2F4FA;
+ border-right: none;
+ border-bottom: 1px solid #E2F4FA;
+ border-left: none;
+}
+ 
+#resultTable td {
+ border-top: 1px solid #fff;
+ border-right: 1px solid #ccc;
+ border-bottom: 1px solid #ccc;
+ border-left: 1px solid #fff;
+}
+ 
+#resultTable thead tr {
+ border-top: 1px solid #E2F4FA;
+ background:url(../wp-content/uploads/2010/01/bg_th.png) right center repeat-x;
+}
+ 
+#resultTable tbody tr {
+ border-bottom: 1px solid #ccc;
+ background-color: white;
+}
+ 
+#resultTable tbody tr:nth-child(even) {
+ background-color: #ECECEC;
+}
+ 
+#resultTable tbody tr:hover { /* 行にマウスオーバーした時のスタイル */
+  background-color: #ccc;
+}
+
+.searchResultList {
+    width: 98%;
+    margin: 0 auto 10px;
+    box-sizing:border-box;
+}
+.mix {
+    width:100%;
+    box-sizing:border-box;
+}
+.resultBox {
+    margin: 0 auto 10px;
+    padding: 3% 2%;
+    background-color: #fff;
+    position: relative;
+    border-top: 2px solid #5391BA;
+    border-right: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+.resultBox .resultInner {
+    padding: 0 4px;
+}
+.resultBox .layoutFullWidth {
+    margin: 0 0 10px;
+}
+.resultBox .layoutLeft {
+    float: left;
+}
+.resultBox .layoutRight {
+    margin: 0 0 0 90px;
+}
+.resultBox .layoutNameArea {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 6px;
+}
+.resultBox_point{
+    color:#D00;
+    font-weight: bold;
+}
+.resultBox_point .no{
+    color:#D00;
+    font-size: 180%;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+.resultBox_name {
+    font-weight: bold;
+}
+.resultPoint{
+    margin-bottom:8px;
+}
+.resultPoint_text {
+    font-size: 13px;
+    font-weight: bold;
+
+    background: linear-gradient(transparent 50%, #FFFF84 0%);
+}
+.detailTextLink {
+    float: right;
+    padding: 0px 10px 0px;
+    margin-bottom: 0 !important;
+    border-radius: 20px;
+    background-color: #d4ebfc;
+    background-size: 15px !important;
+}
+.detailTextLink a{
+    text-decoration:none;
+    font-size:13px;
+}
+.detailTextLink a i{
+    line-height:19px;
+    margin:0 0 0 3px;
+}
+.layouttag {
+    margin: 0 0 10px;
+}
+.tag_item.match {
+    border: 1px solid #FF9D49;
+    background-color: #ffeedd;
+    color: #ff7600;
+    font-weight: bold;
+}
+.tag_item {
+    float: left;
+    margin: 0 2px 0 0;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 1.0;
+    list-style: none;
+}
+.resultinTable {
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    font-size: 13px;
+    
+    margin: 0 0 10px;
+}
+.resultinTable_head {
+    width: 80px;
+    text-align: center;
+    padding: 4px;
+    border-left: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+    background-color: #eae9e9;
+    line-height: 1.0;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+.resultinTable_body {
+    padding: 4px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.clearfix {
+    display: block;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sendButtonBox{
+    margin:0 auto;
+    width:300px;
+}
+.sendButton{
+    display: inline-block;
+    position: relative;
+    width:300px;
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+    box-sizing:border-box;
+    text-align:center;
+
+/*
+    background: #668ad8;//ボタン色
+    border-bottom: solid 5px #36528c; //ボタン色より暗めに
+    border-right: solid 5px #5375bd; //ボタン色より暗めに
+*/
+    background: #fd7171;/*ボタン色*/
+    border-bottom: solid 5px #ef4d4d;/*ボタン色より暗めに*/
+    border-right: solid 5px #ef4d4d;/*ボタン色より暗めに*/
+}
+
+.sendButton:before{    
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+}
+
+.sendButton:after{   
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #FFF;
+    border-bottom-color: transparent;
+}
+
+.sendButton:active{
+    border:none;
+    -ms-transform: translate(6px,6px);
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.sendButton:active:after,.sendButton:active:before {
+    content: none;
+}

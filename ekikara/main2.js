@@ -8,7 +8,7 @@ var text = httpObj.responseText;
 var LF = String.fromCharCode(10);
 var tabText = text.split(LF);
 var tbl = "<table border='1'>";
-for (var i=0; i<tabText.length; i++){
+for (var i=0; i<tabText.length-1; i++){
 var cText = tabText[i].split(",");
 tbl += "<tr>";
 for (var j=0; j<cText.length; j++){

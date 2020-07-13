@@ -1,0 +1,12 @@
+th,td {
+    border: solid 1px;          /* 枠線指定 */
+}
+ 
+table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+}
+ 
+th {
+    width:  300px;              /* 幅指定 */
+    height: 80px;               /* 高さ指定 */
+}

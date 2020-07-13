@@ -1,0 +1,96 @@
+*
+  box-sizing: border-box
+  font-family: meiryo
+body
+  background: #222222
+  padding: 1em
+  color: white
+  h1
+    font-size: 150%
+    margin-bottom: 0.5em
+  h2
+    color: white
+    margin-bottom: 0.5em
+  .description
+    margin-bottom: 2em
+  ul
+    list-style-type: none
+    margin-bottom: 1em
+    &.old
+      font-size: 90%
+    li
+      padding-left: 1em
+      margin-bottom: 1em
+      .detail
+        font-size: 90%
+      a
+        display: inline-block
+        color: #AE2C29
+        margin-bottom: 0.3em
+        font-size: 120%
+        text-decoration: none
+        &.new
+          .name
+            font-weight: bold
+        &:hover
+          color: rgba(#AE2C29, 0.7)
+      p
+        padding-left: 0.5em
+        line-height: 1.2em
+        &.e
+          color: #aaaaaa
+    &.tools
+      li
+        display: inline-block
+        vertical-align: top
+        width: 400px
+        background: black
+        padding: 1em
+        .name
+          margin-bottom: 0.5em
+        img
+          width: 100%
+        a
+          position: relative
+        .detail
+          color: white
+          position: absolute
+          background: rgba(black, 0.8)
+          padding: 0.8em 0.5em
+          white-space: pre-line
+          bottom: 0
+          left: 0
+          height: 22%
+        &:hover
+          opacity: 0.8
+          a
+            color: #AE2C29
+
+.developer
+  position: fixed
+  top: 1em
+  right: 1em
+  > *
+    text-align: right
+    margin-bottom: 0.5em
+  .github, .twitter
+    height: 2em
+    display: flex
+    vertical-align: middle
+    align-items: center
+    justify-content: flex-end
+    .label
+      margin-right: 0.5em
+  .twitter
+    .btn
+      a
+        text-decoration: none
+        padding: 0.3em 0.5em
+        background: #1B95E0
+        color: white
+        border-radius: 5px
+        &:hover
+          background: #0c7abf
+.adsense
+  margin: 1em 0
+  margin-top: 1em !important

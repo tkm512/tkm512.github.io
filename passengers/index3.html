@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!-- (1) chart.jsをインクルード CDNサイト使用 -->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>-->
+	<script src="./chartjs/Chart.js"></script>    
+    <script src="mychart3.js"></script>
+
+    <title>JR東日本乗車人員ランキング</title>
+</head>
+<body>
+<!--ここにグラフが挿入されます-->
+<div style="width: 100%; height: 100%;">
+    <canvas id="myChart" style="width: 100%; height: 400px;"></canvas>
+</div>
+<!-- グラフ更新ボタン -->
+<input type="button" value="東京メトロ乗降人員" onClick="document.location='index.html';">
+<input type="button" value="JR北海道（札幌市内）乗車人員" onClick="document.location='index2.html';">
+<p>2020/07/12 V0.01 公開</p>
+<p>定期外と定期内の利用者が発表されているので積み上げグラフで表示しました。<br>
+黄色の帯が定期内、赤い帯が定期外の利用者です。<br>
+郊外の駅は定期利用客が多い傾向にあるようです。</p>
+<p>データソース<br>
+<a href="https://www.jreast.co.jp/passenger/index.html" target="_blank">各駅の乗車人員 2019年度 ベスト100：JR東日本</a><br>
+</p>
+</html>

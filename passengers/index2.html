@@ -6,18 +6,19 @@
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>    
     <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>-->
 	<script src="./chartjs/Chart.js"></script>    
-    <script src="mychart.js"></script>
+    <script src="mychart2.js"></script>
 
-    <title>JR北海道札幌市内駅乗車人員一覧</title>
+    <title>JR北海道（札幌市内）乗車人員ランキング</title>
 </head>
 <body>
 <!--ここにグラフが挿入されます-->
 <div style="width: 100%; height: 100%;">
-    <canvas id="myChart" style="width: 100%; height: auto;"></canvas>
+    <canvas id="myChart" style="width: 100%; height: 400px;"></canvas>
 </div>
+<!-- グラフ更新ボタン -->
+<input type="button" value="東京メトロ乗降人員" onClick="document.location='index.html';">
+<input type="button" value="JR東日本乗車人員" onClick="document.location='index3.html';">
 <p>2020/07/12 V0.01 公開</p>
-<p>JR駅は乗降人員＝乗車人員×2で計算しています。<br>
-路線別に表示できるよう改良予定です。路線についても道内の全路線対応予定。</p>
 <p>データソース<br>
 <a href="https://ckan.pf-sapporo.jp/dataset/toukeisapporo_jrjyousya" target="_blank">DATA-SMART CITY SAPPORO様　北海道市内駅別乗車人員</a><br>
 </p>

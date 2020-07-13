@@ -2,8 +2,7 @@
 function csv2Array(str) {
   var csvData = [];
   var lines = str.split("\n");
-  <!--for (var i = 0; i < lines.length; ++i) { -->
-  for (var i = 0; i < 20; ++i) {
+  for (var i = 0; i < lines.length; ++i) {
     var cells = lines[i].split(",");
     csvData.push(cells);
   }
@@ -26,7 +25,7 @@ function drawBarChart(data) {
     data: {
       labels: tmpLabel1,
       datasets: [
-        { label: "乗降人員（人）", data: tmpData1, backgroundColor: "blue" }
+        { label: "乗車人員（人）", data: tmpData1, backgroundColor: "green" }
       ]
     },
   options: {
@@ -36,21 +35,21 @@ function drawBarChart(data) {
            },
     title: {
         display: true,
-        text: '東京メトロ乗降人員ランキング'
+        text: 'JR北海道（札幌市内）乗車人員ランキング'
     },
             scales: {                                  //軸設定
                 yAxes: [{                              //y軸設定
                     display: true,                     //表示設定
                     scaleLabel: {                      //軸ラベル設定
                        display: true,                  //表示設定
-                       labelString: '乗降人員（人）',  //ラベル
+                       labelString: '乗車人員（人）',  //ラベル
                        fontSize: 18                    //フォントサイズ（表題）
                     },
                     ticks: {                            //最大値最小値の設定
                         min: 0,                         //最小値
-                        max: 900000,                    //最大値
+                        max: 110000,                    //最大値
                         fontSize: 18,                   //フォントサイズ
-                        stepSize: 100000                //軸間隔
+                        stepSize: 10000                 //軸間隔
                     },
                 }],
                 xAxes: [{                               //x軸設定
@@ -63,7 +62,7 @@ function drawBarChart(data) {
                        fontSize: 18                     //フォントサイズ（表題）
                     },
                     ticks: {
-                        fontSize: 10                    //フォントサイズ
+                        fontSize: 8                     //フォントサイズ
                     },
                 }],
             }
@@ -74,7 +73,7 @@ function drawBarChart(data) {
 function main() {
   // 1) ajaxでCSVファイルをロード
   var req = new XMLHttpRequest();
-  var filePath = './csv/tokyometro.csv';
+  var filePath = './csv/r1jrhsapporocity_sort.csv';
   req.open("GET", filePath, true);
   req.onload = function() {
     // 2) CSVデータ変換の呼び出し

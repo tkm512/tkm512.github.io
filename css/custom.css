@@ -66,6 +66,6 @@ body {
   position: fixed;
   top: 1em;
   right: 1em; }
-  .developer > * {
-    text-align: right;
-    margin-bottom: 0.5em; }
+.developer > * {
+  text-align: right;
+  margin-bottom: 0.5em; }

@@ -62,7 +62,7 @@ function drawBarChart(data) {
                        fontSize: 18                     //フォントサイズ（表題）
                     },
                     ticks: {
-                        fontSize: 8                     //フォントサイズ
+                        fontSize: 6                     //フォントサイズ
                     },
                 }],
             }
